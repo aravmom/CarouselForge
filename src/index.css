@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+/* Hide scrollbar on slide panels */
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Slide content rendering */
+.slide-content h1 { font-size: 2.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 0.5rem; }
+.slide-content h2 { font-size: 1.8rem; font-weight: 700; line-height: 1.2; margin-bottom: 0.4rem; }
+.slide-content h3 { font-size: 1.3rem; font-weight: 600; line-height: 1.3; margin-bottom: 0.3rem; }
+.slide-content p { font-size: 1.05rem; line-height: 1.5; margin-bottom: 0.5rem; }
+.slide-content ul { list-style: none; padding: 0; }
+.slide-content ul li { padding: 0.3rem 0; font-size: 1rem; }
+.slide-content ul li::before { content: "→ "; font-weight: bold; }
